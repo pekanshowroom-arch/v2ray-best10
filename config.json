@@ -1,0 +1,33 @@
+{
+  "source_url": "https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt",
+  "fetch_timeout": 30,
+  "top_n": 10,
+  "max_per_host": 2,
+  "min_speed_mbps": 0.3,
+  "protocols": ["vless", "vmess", "trojan", "ss"],
+  "concurrency": 10,
+  "prefilter": true,
+  "prefilter_concurrency": 40,
+  "prefilter_timeout": 3.0,
+  "xray_start_timeout": 6.0,
+  "latency_timeout": 7.0,
+  "speed_timeout": 12.0,
+  "speed_bytes": 2000000,
+  "min_speed_bytes": 24000,
+  "latency_urls": [
+    "https://www.gstatic.com/generate_204",
+    "https://cp.cloudflare.com/generate_204"
+  ],
+  "speed_urls": [
+    "https://speed.cloudflare.com/__down?bytes=2000000",
+    "https://cachefly.cachefly.net/1mb.test"
+  ],
+  "xray_path": "bin/xray.exe",
+  "output_dir": "output",
+  "git": {
+    "enabled": true,
+    "branch": "main",
+    "remote": "origin",
+    "commit_message": "chore: update best V2Ray configs"
+  }
+}

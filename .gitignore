@@ -1,0 +1,10 @@
+.venv/
+bin/
+bin-v25/
+logs/
+runtime/
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+output/*.tmp
