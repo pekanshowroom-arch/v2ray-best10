@@ -1,23 +1,23 @@
 # Best V2Ray configs
 
-Last update: **2026-11-22 13:14:16 UTC**
+Last update: **2026-11-22 13:18:03 UTC**
 
 Source: <https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt>
 
-Scanned **80** configs, **24** responded, showing the best **10**.
+Scanned **77** configs, **25** responded, showing the best **10**.
 
 | # | Protocol | Latency | Speed | Server | Name |
 |---:|---|---:|---:|---|---|
-| 1 | SS | 351 ms | 7.06 Mbps | `151.241.19.29:19999` | 🌐سرور 192 - Aza-01- MTSRVRS |
-| 2 | SS | 3163 ms | 8.23 Mbps | `8.211.57.86:443` | 🌐سرور 160 - Aza-01- MTSRVRS |
-| 3 | VLESS | 4136 ms | 7.77 Mbps | `46.28.71.247:443` | 🌐سرور 144 - Aza-01- MTSRVRS |
-| 4 | VMESS | 5108 ms | 7.21 Mbps | `38.107.234.57:80` | @filembad |
-| 5 | VLESS | 1397 ms | 4.94 Mbps | `188.114.98.0:443` | 🌐سرور 134 - Aza-01- MTSRVRS |
-| 6 | VLESS | 485 ms | 3.88 Mbps | `144.31.0.153:443` | 🌐سرور 175 - Aza-01- MTSRVRS |
-| 7 | SS | 593 ms | 3.53 Mbps | `static.28.210.29.2.clients.your-server.de:25565` | 🌐سرور 31 - Aza-01- MTSRVRS |
-| 8 | SS | 709 ms | 3.28 Mbps | `47.245.170.82:443` | 🌐سرور 23 - Aza-01- MTSRVRS |
-| 9 | SS | 7068 ms | 3.40 Mbps | `94.156.250.148:7001` | 🌐سرور 79 - Aza-01- MTSRVRS |
-| 10 | VLESS | 3399 ms | 2.89 Mbps | `31.56.18.99:443` | 🌐سرور 107 - Aza-01- MTSRVRS |
+| 1 | VMESS | 3441 ms | 7.58 Mbps | `38.107.234.57:80` | @filembad |
+| 2 | SS | 810 ms | 6.91 Mbps | `8.211.57.86:443` | 🌐سرور 160 - Aza-01- MTSRVRS |
+| 3 | VMESS | 5997 ms | 6.92 Mbps | `172.67.156.121:443` | 🇩🇪@FreakConfig |
+| 4 | VMESS | 614 ms | 5.91 Mbps | `www.gptcloudai.com:443` | 🇩🇪@FreakConfig |
+| 5 | VLESS | 3785 ms | 6.53 Mbps | `46.28.71.247:443` | 🌐سرور 144 - Aza-01- MTSRVRS |
+| 6 | SS | 750 ms | 5.46 Mbps | `151.241.19.29:19999` | 🌐سرور 192 - Aza-01- MTSRVRS |
+| 7 | SS | 7224 ms | 5.96 Mbps | `94.156.250.148:7001` | 🌐سرور 79 - Aza-01- MTSRVRS |
+| 8 | VLESS | 5151 ms | 5.48 Mbps | `188.114.98.0:443` | 🌐سرور 10 - Aza-01- MTSRVRS |
+| 9 | SS | 394 ms | 3.31 Mbps | `47.254.143.251:443` | 🌐سرور 84 - Aza-01- MTSRVRS |
+| 10 | VLESS | 2616 ms | 3.93 Mbps | `188.114.98.0:443` | 🌐 به روزرسانی شده درAza-01 - 11:12 |
 
 ## Subscription URLs
 
