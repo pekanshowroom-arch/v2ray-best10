@@ -24,7 +24,15 @@
 01 | VLESS | 420ms | 12.4Mbps | نام اصلی
 ```
 
-لینک خام اشتراک بعد از ساخت مخزن به شکل زیر است:
+## آدرس اشتراک آماده
+
+این آدرس همین حالا فعال است و در PassWall 2 قابل استفاده است:
+
+```text
+https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/main/output/sub_base64.txt
+```
+
+اگر نام کاربری یا نام مخزن را تغییر دادید، الگوی کلی این است:
 
 ```text
 https://raw.githubusercontent.com/<USER>/<REPO>/main/output/sub_base64.txt
@@ -212,7 +220,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
 
 ## تنظیم PassWall 2
 
-1. لینک خام `sub_base64.txt` را از خروجی `setup_repo.ps1` کپی کنید.
+1. این آدرس را کپی کنید:
+
+   ```text
+   https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/main/output/sub_base64.txt
+   ```
+
 2. در PassWall 2 به بخش **Node Subscription / اشتراک** بروید.
 3. آدرس را اضافه کنید و نوع اشتراک را در صورت وجود **Base64** انتخاب کنید.
 4. دکمهٔ **Update / به‌روزرسانی** را بزنید.

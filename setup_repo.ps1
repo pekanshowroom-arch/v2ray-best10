@@ -52,6 +52,14 @@ if (-not $owner) {
 $fullName = "$owner/$RepoName"
 Write-Host "=== Publishing to $fullName ===" -ForegroundColor Cyan
 
+# Make git use the token of the account that is currently active in gh.  A
+# stale credential for a different GitHub account in Windows Credential
+# Manager otherwise causes a confusing "permission denied" error on push.
+& gh auth setup-git --hostname github.com *> $null
+if ($LASTEXITCODE -ne 0) {
+    Write-Host 'Warning: gh auth setup-git failed; git may use old credentials.' -ForegroundColor Yellow
+}
+
 # --- Local git repository --------------------------------------------------
 if (-not (Test-Path (Join-Path $root '.git'))) {
     Write-Host 'Initialising git ...' -ForegroundColor Cyan
@@ -117,7 +125,9 @@ Write-Host 'Pushing ...' -ForegroundColor Cyan
 & git push -u origin $Branch
 if ($LASTEXITCODE -ne 0) {
     Write-Host ''
-    Write-Host 'Push failed. If the remote already contains commits, run:' -ForegroundColor Yellow
+    Write-Host 'Push failed. If the error mentions permission denied, run:' -ForegroundColor Yellow
+    Write-Host '  gh auth setup-git --hostname github.com'
+    Write-Host 'If the remote already contains commits, run:' -ForegroundColor Yellow
     Write-Host "  git pull --rebase origin $Branch"
     Write-Host "  git push -u origin $Branch"
     exit 1
