@@ -16,7 +16,7 @@ param(
     [string]$Branch = 'main'
 )
 
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Continue'
 $root = $PSScriptRoot
 Set-Location $root
 
@@ -82,12 +82,19 @@ if ($LASTEXITCODE -ne 0) { Fail 'git add failed.' }
 & git diff --cached --quiet
 $hasStagedChanges = ($LASTEXITCODE -ne 0)
 if ($hasStagedChanges) {
-    & git commit -m 'Initial commit: config scanner and generated subscription'
+    & git rev-parse --verify --quiet HEAD *> $null
+    $hasHead = ($LASTEXITCODE -eq 0)
+    $commitMessage = if ($hasHead) {
+        'Update generated subscription'
+    } else {
+        'Initial commit: config scanner and generated subscription'
+    }
+    & git commit -m $commitMessage
     if ($LASTEXITCODE -ne 0) { Fail 'git commit failed. Check your git identity settings.' }
 }
 
 # --- Remote repository -----------------------------------------------------
-$remoteUrl = (& git remote get-url origin 2>$null)
+$remoteUrl = (& git config --get remote.origin.url 2>$null)
 if (-not $remoteUrl) {
     & gh repo view $fullName --json name *> $null
     $repoExists = ($LASTEXITCODE -eq 0)
