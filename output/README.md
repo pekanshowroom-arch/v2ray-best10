@@ -1,23 +1,23 @@
 # Best V2Ray configs
 
-Last update: **2026-11-22 13:18:03 UTC**
+Last update: **2026-11-23 02:31:32 UTC**
 
 Source: <https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt>
 
-Scanned **77** configs, **25** responded, showing the best **10**.
+Scanned **86** configs, **37** responded, showing the best **10**.
 
 | # | Protocol | Latency | Speed | Server | Name |
 |---:|---|---:|---:|---|---|
-| 1 | VMESS | 3441 ms | 7.58 Mbps | `38.107.234.57:80` | @filembad |
-| 2 | SS | 810 ms | 6.91 Mbps | `8.211.57.86:443` | 🌐سرور 160 - Aza-01- MTSRVRS |
-| 3 | VMESS | 5997 ms | 6.92 Mbps | `172.67.156.121:443` | 🇩🇪@FreakConfig |
-| 4 | VMESS | 614 ms | 5.91 Mbps | `www.gptcloudai.com:443` | 🇩🇪@FreakConfig |
-| 5 | VLESS | 3785 ms | 6.53 Mbps | `46.28.71.247:443` | 🌐سرور 144 - Aza-01- MTSRVRS |
-| 6 | SS | 750 ms | 5.46 Mbps | `151.241.19.29:19999` | 🌐سرور 192 - Aza-01- MTSRVRS |
-| 7 | SS | 7224 ms | 5.96 Mbps | `94.156.250.148:7001` | 🌐سرور 79 - Aza-01- MTSRVRS |
-| 8 | VLESS | 5151 ms | 5.48 Mbps | `188.114.98.0:443` | 🌐سرور 10 - Aza-01- MTSRVRS |
-| 9 | SS | 394 ms | 3.31 Mbps | `47.254.143.251:443` | 🌐سرور 84 - Aza-01- MTSRVRS |
-| 10 | VLESS | 2616 ms | 3.93 Mbps | `188.114.98.0:443` | 🌐 به روزرسانی شده درAza-01 - 11:12 |
+| 1 | VLESS | 800 ms | 10.30 Mbps | `188.114.98.0:443` | 🌐سرور 22 - Aza-02- MTSRVRS |
+| 2 | SS | 444 ms | 9.29 Mbps | `79.127.184.104:19999` | 🌐سرور 46 - Aza-02- MTSRVRS |
+| 3 | SS | 366 ms | 7.75 Mbps | `47.245.167.223:443` | 🌐سرور 51 - Aza-02- MTSRVRS |
+| 4 | VLESS | 388 ms | 6.97 Mbps | `109.248.162.218:11209` | 🌐سرور 43 - Aza-02- MTSRVRS |
+| 5 | VLESS | 782 ms | 7.80 Mbps | `146.103.43.91:9543` | 🌐سرور 109 - Aza-02- MTSRVRS |
+| 6 | VLESS | 2759 ms | 8.37 Mbps | `188.114.98.0:443` | 🌐سرور 133 - Aza-02- MTSRVRS |
+| 7 | TROJAN | 1804 ms | 8.13 Mbps | `216.152.147.79:443` | 🌐سرور 74 - Aza-02- MTSRVRS |
+| 8 | VMESS | 606 ms | 5.77 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
+| 9 | VLESS | 1020 ms | 5.78 Mbps | `xray2-direct-mci1-fs-ce.freesocks.work:443` | 🌐سرور 49 - Aza-02- MTSRVRS |
+| 10 | VLESS | 1167 ms | 5.76 Mbps | `xray2-direct-mci1-fs-ce.freesocks.work:443` | 🌐سرور 21 - Aza-02- MTSRVRS |
 
 ## Subscription URLs
 
