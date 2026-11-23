@@ -133,7 +133,7 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
-$base = "https://raw.githubusercontent.com/$fullName/$Branch/output"
+$base = "https://raw.githubusercontent.com/$fullName/refs/heads/$Branch/output"
 
 Write-Host ''
 Write-Host '=== Published ===' -ForegroundColor Green

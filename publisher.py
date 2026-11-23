@@ -264,7 +264,7 @@ def raw_urls(repo_dir: Path, branch: str) -> dict[str, str]:
         return {}
     owner = match.group("owner")
     repo = match.group("repo")
-    base = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/output"
+    base = f"https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/{branch}/output"
     return {
         "base64": f"{base}/sub_base64.txt",
         "plain": f"{base}/sub.txt",

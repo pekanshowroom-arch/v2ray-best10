@@ -29,13 +29,13 @@
 این آدرس همین حالا فعال است و در PassWall 2 قابل استفاده است:
 
 ```text
-https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/main/output/sub_base64.txt
+https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/refs/heads/main/output/sub_base64.txt
 ```
 
 اگر نام کاربری یا نام مخزن را تغییر دادید، الگوی کلی این است:
 
 ```text
-https://raw.githubusercontent.com/<USER>/<REPO>/main/output/sub_base64.txt
+https://raw.githubusercontent.com/<USER>/<REPO>/refs/heads/main/output/sub_base64.txt
 ```
 
 ---
@@ -223,7 +223,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
 1. این آدرس را کپی کنید:
 
    ```text
-   https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/main/output/sub_base64.txt
+   https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/refs/heads/main/output/sub_base64.txt
    ```
 
 2. در PassWall 2 به بخش **Node Subscription / اشتراک** بروید.
