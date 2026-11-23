@@ -1,23 +1,23 @@
 # Best V2Ray configs
 
-Last update: **2026-11-23 08:31:35 UTC**
+Last update: **2026-11-23 14:31:58 UTC**
 
 Source: <https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt>
 
-Scanned **84** configs, **29** responded, showing the best **10**.
+Scanned **75** configs, **32** responded, showing the best **10**.
 
 | # | Protocol | Latency | Speed | Server | Name |
 |---:|---|---:|---:|---|---|
-| 1 | VLESS | 349 ms | 8.34 Mbps | `87.82.59.60:837` | 🌐سرور 81 - Aza-02- MTSRVRS |
-| 2 | SS | 437 ms | 8.49 Mbps | `static.28.210.29.2.clients.your-server.de:25565` | 🌐سرور 129 - Aza-02- MTSRVRS |
-| 3 | VLESS | 712 ms | 8.13 Mbps | `2.56.125.209:80` | 🌐سرور 25 - Aza-02- MTSRVRS |
-| 4 | SS | 347 ms | 6.95 Mbps | `47.254.167.157:443` | 🌐سرور 83 - Aza-02- MTSRVRS |
-| 5 | VMESS | 1592 ms | 7.62 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
-| 6 | VLESS | 623 ms | 5.94 Mbps | `191.217.244.244:443` | 🌐سرور 50 - Aza-02- MTSRVRS |
-| 7 | VLESS | 1232 ms | 5.41 Mbps | `188.114.98.0:443` | 🌐سرور 79 - Aza-02- MTSRVRS |
-| 8 | VMESS | 1217 ms | 3.86 Mbps | `pdmv4.xiaoyan.io:16632` | 🇭🇰 Join+Telegram:@Farah_VPN 🇭🇰 |
-| 9 | VLESS | 1889 ms | 3.95 Mbps | `188.114.98.0:443` | 🌐سرور 22 - Aza-02- MTSRVRS |
-| 10 | SS | 689 ms | 3.23 Mbps | `47.245.167.223:443` | 🌐سرور 51 - Aza-02- MTSRVRS |
+| 1 | VLESS | 5262 ms | 7.39 Mbps | `188.114.98.0:443` | 🌐سرور 109 - Aza-02- MTSRVRS |
+| 2 | VLESS | 1333 ms | 7.01 Mbps | `109.248.170.119:13447` | 🌐سرور 84 - Aza-02- MTSRVRS |
+| 3 | TROJAN | 2051 ms | 6.54 Mbps | `176.65.151.85:8443` | 🌐سرور 3 - Aza-02- MTSRVRS |
+| 4 | VMESS | 1175 ms | 5.53 Mbps | `172.67.156.121:443` | 🇩🇪@FreakConfig |
+| 5 | TROJAN | 5251 ms | 4.57 Mbps | `216.152.147.79:443` | 🌐سرور 27 - Aza-02- MTSRVRS |
+| 6 | VMESS | 1199 ms | 4.20 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
+| 7 | TROJAN | 2970 ms | 3.95 Mbps | `bgsg1.hikigo.com:443` | 🌐سرور 113 - Aza-02- MTSRVRS |
+| 8 | VLESS | 950 ms | 3.55 Mbps | `188.114.98.0:443` | 🌐سرور 40 - Aza-02- MTSRVRS |
+| 9 | VLESS | 1723 ms | 3.73 Mbps | `146.103.43.70:9543` | 🌐سرور 41 - Aza-02- MTSRVRS |
+| 10 | VLESS | 6034 ms | 2.53 Mbps | `free.fugui.lol:19482` | 🌐سرور 33 - Aza-02- MTSRVRS |
 
 ## Subscription URLs
 
