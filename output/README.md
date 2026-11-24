@@ -1,23 +1,23 @@
 # Best V2Ray configs
 
-Last update: **2026-11-23 20:31:41 UTC**
+Last update: **2026-11-24 02:31:46 UTC**
 
 Source: <https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt>
 
-Scanned **64** configs, **22** responded, showing the best **10**.
+Scanned **72** configs, **32** responded, showing the best **10**.
 
 | # | Protocol | Latency | Speed | Server | Name |
 |---:|---|---:|---:|---|---|
-| 1 | VMESS | 583 ms | 7.69 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
-| 2 | VLESS | 1308 ms | 6.60 Mbps | `109.248.170.119:13447` | 🌐سرور 84 - Aza-02- MTSRVRS |
-| 3 | SS | 2498 ms | 3.24 Mbps | `47.254.167.157:443` | 🌐سرور 136 - Aza-02- MTSRVRS |
-| 4 | VLESS | 938 ms | 1.77 Mbps | `188.114.98.0:443` | 🌐سرور 56 - Aza-02- MTSRVRS |
-| 5 | VLESS | 1227 ms | 1.00 Mbps | `146.103.43.70:9543` | 🌐سرور 41 - Aza-02- MTSRVRS |
-| 6 | VLESS | 5067 ms | 1.25 Mbps | `79.182.39.131:443` | 🌐سرور 79 - Aza-02- MTSRVRS |
-| 7 | SS | 2566 ms | 0.85 Mbps | `47.245.167.223:443` | 🌐سرور 105 - Aza-02- MTSRVRS |
-| 8 | VLESS | 2151 ms | 0.54 Mbps | `188.114.98.0:443` | 🌐سرور 146 - Aza-02- MTSRVRS |
-| 9 | VLESS | 1813 ms | 0.31 Mbps | `91.132.190.161:443` | 🌐سرور 112 - Aza-02- MTSRVRS |
-| 10 | VLESS | 2622 ms | 0.31 Mbps | `150.251.143.253:443` | 🌐سرور 135 - Aza-02- MTSRVRS |
+| 1 | VLESS | 1643 ms | 11.11 Mbps | `195.206.235.72:443` | 🌐سرور 28 - Aza-03- MTSRVRS |
+| 2 | SS | 376 ms | 8.40 Mbps | `47.245.167.223:443` | 🌐سرور 136 - Aza-03- MTSRVRS |
+| 3 | VLESS | 3418 ms | 10.12 Mbps | `188.114.98.0:443` | 🌐سرور 30 - Aza-03- MTSRVRS |
+| 4 | VLESS | 834 ms | 8.88 Mbps | `188.114.98.0:443` | 🌐سرور 177 - Aza-03- MTSRVRS |
+| 5 | VMESS | 548 ms | 7.13 Mbps | `57.129.132.223:80` | @filembad |
+| 6 | VLESS | 993 ms | 7.69 Mbps | `146.103.43.70:9543` | 🌐سرور 115 - Aza-03- MTSRVRS |
+| 7 | VLESS | 558 ms | 6.61 Mbps | `48.102.204.67:8443` | 🌐سرور 22 - Aza-03- MTSRVRS |
+| 8 | SS | 740 ms | 6.27 Mbps | `15.204.246.108:8881` | 🌐سرور 214 - Aza-03- MTSRVRS |
+| 9 | VLESS | 1549 ms | 6.18 Mbps | `152.234.239.170:9467` | 🌐سرور 51 - Aza-03- MTSRVRS |
+| 10 | VMESS | 678 ms | 4.63 Mbps | `172.67.156.121:443` | 🇩🇪@FreakConfig |
 
 ## Subscription URLs
 
