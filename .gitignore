@@ -3,6 +3,7 @@ bin/
 bin-v25/
 logs/
 runtime/
+tmp/
 __pycache__/
 *.pyc
 *.pyo

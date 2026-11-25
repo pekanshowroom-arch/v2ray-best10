@@ -32,6 +32,13 @@
 https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/refs/heads/main/output/sub_base64.txt
 ```
 
+اگر روتر به GitHub خام دسترسی ندارد (مثلاً به‌روزرسانی اشتراک با timeout متوقف می‌شود)، از
+آینهٔ زیر استفاده کنید:
+
+```text
+https://gh-proxy.org/https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/refs/heads/main/output/sub_base64.txt
+```
+
 اگر نام کاربری یا نام مخزن را تغییر دادید، الگوی کلی این است:
 
 ```text
@@ -195,9 +202,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
 | `speed_bytes` | `2000000` | حجم دانلود تست سرعت |
 | `prefilter` | `true` | فیلتر سریع TCP قبل از اجرای Xray |
 | `git.enabled` | `true` | انتشار خودکار در GitHub |
+| `source_urls` | `[]` | آدرس‌های جایگزین برای دانلود منبع؛ به ترتیب، پیش از `source_url` امتحان می‌شوند |
 
 مقدار `min_speed_mbps` فقط **اولویت** است؛ اگر تعداد کانفیگ‌های سریع کم باشد، از کانفیگ‌های
 کندتر هم برای پر کردن ۱۰ جای خالی استفاده می‌شود.
+
+اگر `raw.githubusercontent.com` مستقیم در دسترس نباشد، اسکنر ابتدا آینه‌های `source_urls`
+(مثل `gh-proxy.org`) و در نهایت `source_url` را امتحان می‌کند. به این ترتیب قطعی موقت GitHub
+باعث از کار افتادن کل زمان‌بندی نمی‌شود.
 
 ---
 
@@ -220,6 +232,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
 
 ## تنظیم PassWall 2
 
+> **نسخهٔ PassWall:** اگر هستهٔ Xray شما نسخهٔ ۲۶ است، `luci-app-passwall2` باید حداقل
+> `26.11.11` باشد. نسخه‌های قدیمی‌تر فیلد حذف‌شدهٔ `proxySettings` را تولید می‌کنند و هسته
+> با خطای `The feature outbound "proxySettings" has been removed` بالا نمی‌آید.
+
 1. این آدرس را کپی کنید:
 
    ```text
@@ -227,11 +243,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
    ```
 
 2. در PassWall 2 به بخش **Node Subscription / اشتراک** بروید.
-3. آدرس را اضافه کنید و نوع اشتراک را در صورت وجود **Base64** انتخاب کنید.
-4. دکمهٔ **Update / به‌روزرسانی** را بزنید.
-5. در صورت نیاز، به‌روزرسانی خودکار اشتراک در روتر را روی ۶ یا ۱۲ ساعت بگذارید.
+3. آدرس را اضافه کنید؛ نوع اشتراک **Base64** است. اگر باز نشد، `output/sub.txt` را بدهید.
+4. بعد از ذخیره، **Update** بزنید تا ۱۰ نود اضافه شوند.
+5. در **Basic Settings**:
+   - **Main switch** روشن باشد.
+   - **Client Proxy** روشن باشد تا دستگاه‌های LAN پروکسی شوند.
+   - از لیست **Node** یک نود انتخاب و ذخیره کنید.
+6. در تنظیمات اشتراک:
+   - **Auto Update** و در صورت وجود **Boot Update** روشن باشند.
+   - بازهٔ به‌روزرسانی ۶ یا ۱۲ ساعت مناسب است.
+   - **Filter keyword mode** روی حالت غیرفعال (`0`) باشد تا نام نودها حذف نشوند.
+7. بعد از هر به‌روزرسانی، اگر نود انتخاب‌شده از اشتراک حذف شده باشد، PassWall ممکن است به
+   نود معتبر دیگری سوییچ نکند؛ در این حالت از **Node List** یک نود سالم انتخاب کنید.
 
-اگر PassWall لینک Base64 را نپذیرفت، از `output/sub.txt` استفاده کنید.
+> Touch Check در صفحهٔ اصلی، اتصال خودِ روتر را تست می‌کند و ممکن است قرمز بماند در حالی که
+> دستگاه‌های LAN از پروکسی استفاده می‌کنند. تست واقعی را از یک کلاینت (مثلاً با باز کردن
+> Google) انجام دهید.
 
 > با هر اسکن، محتوای فایل عوض می‌شود. روتر فقط همان فایل کوچک را می‌گیرد و هیچ اسکنی روی روتر انجام نمی‌شود.
 
@@ -248,6 +275,9 @@ gh auth login --hostname github.com --git-protocol https --web
 ### هیچ کانفیگی تست را پاس نکرد
 
 - اتصال اینترنت و دسترسی به `raw.githubusercontent.com` را بررسی کنید.
+- اگر دانلود با خطای `handshake timed out` یا `connection reset` متوقف شد، وجود آینه در
+  `config.json → source_urls` را بررسی کنید. اسکنر به‌طور خودکار `gh-proxy.org` و سپس منبع
+  اصلی را امتحان می‌کند و آدرس‌های جایگزین را در لاگ می‌نویسد.
 - اسکن سریع با لاگ کامل:
 
   ```text

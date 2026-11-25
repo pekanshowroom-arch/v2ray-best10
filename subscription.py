@@ -15,7 +15,9 @@ from __future__ import annotations
 import base64
 import json
 import re
+import time
 import urllib.request
+from collections.abc import Sequence
 from dataclasses import dataclass
 
 SCHEME_RE = re.compile(
@@ -102,25 +104,46 @@ def extract_raw_configs(text: str) -> list[RawConfig]:
     return result
 
 
-def fetch_subscription(url: str, timeout: float = 30.0, retries: int = 3) -> str:
-    last_error: Exception | None = None
-    for attempt in range(1, retries + 1):
-        request = urllib.request.Request(
-            url,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) configscaner/1.0",
-                "Cache-Control": "no-cache",
-                "Pragma": "no-cache",
-            },
-        )
-        try:
-            with urllib.request.urlopen(request, timeout=timeout) as response:
-                data = response.read()
-            return data.decode("utf-8", errors="replace")
-        except Exception as exc:  # pragma: no cover - network diagnostic path
-            last_error = exc
-            if attempt < retries:
-                import time
+def _download(url: str, timeout: float) -> str:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) configscaner/1.0",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        data = response.read()
+    return data.decode("utf-8", errors="replace")
 
-                time.sleep(min(2 * attempt, 8))
-    raise RuntimeError(f"could not download subscription after {retries} attempts: {last_error}")
+
+def fetch_subscription(
+    urls: str | Sequence[str], timeout: float = 30.0, retries: int = 3
+) -> str:
+    """Download the first reachable source.
+
+    When the direct GitHub URL is unreachable, mirrors such as gh-proxy.org are
+    tried before giving up.  A single string is still accepted for backwards
+    compatibility.
+    """
+    if isinstance(urls, str):
+        urls = [urls]
+    candidates = [str(url).strip() for url in urls if str(url).strip()]
+    if not candidates:
+        raise ValueError("no subscription URLs configured")
+
+    failures: list[str] = []
+    for url in candidates:
+        last_error: Exception | None = None
+        for attempt in range(1, retries + 1):
+            try:
+                return _download(url, timeout)
+            except Exception as exc:  # pragma: no cover - network diagnostic path
+                last_error = exc
+                if attempt < retries:
+                    time.sleep(min(2 * attempt, 8))
+        failures.append(f"{url}: {last_error}")
+    raise RuntimeError(
+        "could not download subscription from any source: " + " | ".join(failures)
+    )

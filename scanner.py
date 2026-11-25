@@ -32,6 +32,7 @@ LOGGER = logging.getLogger("scanner")
 
 DEFAULT_CONFIG: dict = {
     "source_url": "https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt",
+    "source_urls": [],
     "fetch_timeout": 30,
     "top_n": 10,
     "max_per_host": 2,
@@ -301,6 +302,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.source:
         config["source_url"] = args.source
+        config["source_urls"] = []
     if args.top is not None:
         config["top_n"] = max(1, args.top)
     if args.concurrency is not None:
@@ -329,7 +331,20 @@ def main(argv: list[str] | None = None) -> int:
     started = time.perf_counter()
 
     LOGGER.info("Log file: %s", log_path)
-    LOGGER.info("Source: %s", config.get("source_url"))
+    source_urls: list[str] = []
+    for value in config.get("source_urls") or []:
+        value = str(value).strip()
+        if value and value not in source_urls:
+            source_urls.append(value)
+    source_url = str(config["source_url"]).strip()
+    if source_url and source_url not in source_urls:
+        source_urls.append(source_url)
+    if not source_urls:
+        LOGGER.error("No source URL configured")
+        return 1
+    LOGGER.info("Source: %s", source_urls[0])
+    if len(source_urls) > 1:
+        LOGGER.info("Fallback source: %s", ", ".join(source_urls[1:]))
     LOGGER.info("Xray: %s", xray_path)
 
     if not xray_path.exists():
@@ -340,7 +355,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         LOGGER.info("Downloading subscription...")
         text = fetch_subscription(
-            str(config["source_url"]), timeout=float(config.get("fetch_timeout", 30))
+            source_urls, timeout=float(config.get("fetch_timeout", 30))
         )
         configs, stats = _prepare_configs(text, allowed_protocols)
         if not configs:

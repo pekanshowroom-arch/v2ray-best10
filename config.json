@@ -1,5 +1,8 @@
 {
   "source_url": "https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt",
+  "source_urls": [
+    "https://gh-proxy.org/https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt"
+  ],
   "fetch_timeout": 30,
   "top_n": 10,
   "max_per_host": 2,
