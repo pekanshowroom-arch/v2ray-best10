@@ -236,7 +236,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
 > `26.11.11` باشد. نسخه‌های قدیمی‌تر فیلد حذف‌شدهٔ `proxySettings` را تولید می‌کنند و هسته
 > با خطای `The feature outbound "proxySettings" has been removed` بالا نمی‌آید.
 
-1. این آدرس را کپی کنید:
+1. این آدرس را کپی کنید (آینهٔ `gh-proxy.org` برای شبکه‌هایی که GitHub خام را باز نمی‌کنند):
+
+   ```text
+   https://gh-proxy.org/https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/refs/heads/main/output/sub_base64.txt
+   ```
+
+   اگر شبکه‌تان به GitHub خام دسترسی دارد، می‌توانید مستقیم هم بدهید:
 
    ```text
    https://raw.githubusercontent.com/pekanshowroom-arch/v2ray-best10/refs/heads/main/output/sub_base64.txt
@@ -244,17 +250,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 --no-push
 
 2. در PassWall 2 به بخش **Node Subscription / اشتراک** بروید.
 3. آدرس را اضافه کنید؛ نوع اشتراک **Base64** است. اگر باز نشد، `output/sub.txt` را بدهید.
-4. بعد از ذخیره، **Update** بزنید تا ۱۰ نود اضافه شوند.
+4. بعد از ذخیره، **Manual subscription** بزنید تا ۱۰ نود اضافه شوند.
 5. در **Basic Settings**:
    - **Main switch** روشن باشد.
    - **Client Proxy** روشن باشد تا دستگاه‌های LAN پروکسی شوند.
+   - **Localhost Proxy** روشن باشد تا خود روتر هم برای به‌روزرسانی اشتراک از پروکسی استفاده کند.
    - از لیست **Node** یک نود انتخاب و ذخیره کنید.
-6. در تنظیمات اشتراک:
-   - **Auto Update** و در صورت وجود **Boot Update** روشن باشند.
-   - بازهٔ به‌روزرسانی ۶ یا ۱۲ ساعت مناسب است.
+6. در تنظیمات اشتراک (صفحهٔ ویرایش اشتراک):
    - **Filter keyword mode** روی حالت غیرفعال (`0`) باشد تا نام نودها حذف نشوند.
-7. بعد از هر به‌روزرسانی، اگر نود انتخاب‌شده از اشتراک حذف شده باشد، PassWall ممکن است به
-   نود معتبر دیگری سوییچ نکند؛ در این حالت از **Node List** یک نود سالم انتخاب کنید.
+   - **Update Once on Boot** روشن باشد.
+   - **Auto Update Mode** روی **Loop Mode** و بازهٔ **۶ ساعت** باشد.
+   - **Subscribe URL Access Method** روی **Auto** بماند.
+   - **allowInsecure** روشن نشود.
+7. بعد از هر به‌روزرسانی، PassWall نود فعلی را بر اساس `address:port` و گروه با نودهای جدید
+   تطبیق می‌دهد. اگر آن سرور در اشتراک جدید نباشد، اولین نود سالم اشتراک انتخاب می‌شود؛ بنابراین
+   هسته معمولاً روشن می‌ماند. با این حال بعد از هر اسکن، وضعیت **Core** و نود انتخاب‌شده را
+   یک‌بار بررسی کنید.
 
 > Touch Check در صفحهٔ اصلی، اتصال خودِ روتر را تست می‌کند و ممکن است قرمز بماند در حالی که
 > دستگاه‌های LAN از پروکسی استفاده می‌کنند. تست واقعی را از یک کلاینت (مثلاً با باز کردن
