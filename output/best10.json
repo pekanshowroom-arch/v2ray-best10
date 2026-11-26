@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T08:32:31+00:00",
+  "generated_at": "2026-11-26T14:32:49+00:00",
   "source_url": "https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt",
-  "duration_seconds": 148.3,
+  "duration_seconds": 166.4,
   "stats": {
     "source_candidates": 353,
     "unique": 196,
@@ -9,9 +9,9 @@
     "duplicates": 116,
     "protocol_skipped": 0,
     "parse_errors": 0,
-    "prefiltered": 114,
-    "tested": 114,
-    "working": 45,
+    "prefiltered": 117,
+    "tested": 117,
+    "working": 29,
     "selected": 10
   },
   "selected": [
@@ -20,110 +20,110 @@
       "protocol": "ss",
       "host": "8.211.38.49",
       "port": 443,
-      "latency_ms": 497.1,
-      "speed_mbps": 7.485,
-      "score": 0.9734,
-      "name": "01 | SS | 497ms | 7.5Mbps | 🌐سرور 7 - Aza-05- MTSRVRS",
-      "uri": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0@8.211.38.49:443#01%20%7C%20SS%20%7C%20497ms%20%7C%207.5Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%207%20-%20Aza-05-%20MTSRVRS"
+      "latency_ms": 499.1,
+      "speed_mbps": 8.423,
+      "score": 0.9624,
+      "name": "01 | SS | 499ms | 8.4Mbps | 🌐سرور 7 - Aza-05- MTSRVRS",
+      "uri": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0@8.211.38.49:443#01%20%7C%20SS%20%7C%20499ms%20%7C%208.4Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%207%20-%20Aza-05-%20MTSRVRS"
     },
     {
       "rank": 2,
-      "protocol": "ss",
-      "host": "mojtun.mlbaz.ir",
-      "port": 555,
-      "latency_ms": 699.8,
-      "speed_mbps": 7.726,
-      "score": 0.9566,
-      "name": "02 | SS | 700ms | 7.7Mbps | 🌐سرور 73 - Aza-05- MTSRVRS",
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMTY0OTIwNmRjNTI0OTRkOWQ4NmI3MTcwYTA0MDU0Ng@mojtun.mlbaz.ir:555?security=none&type=tcp#02%20%7C%20SS%20%7C%20700ms%20%7C%207.7Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%2073%20-%20Aza-05-%20MTSRVRS"
+      "protocol": "vless",
+      "host": "146.103.42.6",
+      "port": 9543,
+      "latency_ms": 710.2,
+      "speed_mbps": 7.869,
+      "score": 0.873,
+      "name": "02 | VLESS | 710ms | 7.9Mbps | 🌐سرور 272 - Aza-05- MTSRVRS",
+      "uri": "vless://920b3cd9-4f82-4669-bbd2-d4a28b9052c6@146.103.42.6:9543?security=reality&encryption=none&pbk=M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=storage.yandexcloud.net&sid=123abcdf#02%20%7C%20VLESS%20%7C%20710ms%20%7C%207.9Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20272%20-%20Aza-05-%20MTSRVRS"
     },
     {
       "rank": 3,
-      "protocol": "ss",
-      "host": "51.38.127.93",
-      "port": 8080,
-      "latency_ms": 764.4,
-      "speed_mbps": 7.271,
-      "score": 0.8975,
-      "name": "03 | SS | 764ms | 7.3Mbps | 🌐 به روزرسانی شده درAza-05 - 08:09",
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYnlzNzdwcG5hdDZ3Mnln@51.38.127.93:8080#03%20%7C%20SS%20%7C%20764ms%20%7C%207.3Mbps%20%7C%20%F0%9F%8C%90%20%D8%A8%D9%87%20%D8%B1%D9%88%D8%B2%D8%B1%D8%B3%D8%A7%D9%86%DB%8C%20%D8%B4%D8%AF%D9%87%20%D8%AF%D8%B1Aza-05%20-%2008%3A09"
-    },
-    {
-      "rank": 4,
-      "protocol": "ss",
-      "host": "8.211.57.86",
-      "port": 443,
-      "latency_ms": 6260.2,
-      "speed_mbps": 7.416,
-      "score": 0.8278,
-      "name": "04 | SS | 6260ms | 7.4Mbps | 🌐سرور 67 - Aza-05- MTSRVRS",
-      "uri": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0@8.211.57.86:443#04%20%7C%20SS%20%7C%206260ms%20%7C%207.4Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%2067%20-%20Aza-05-%20MTSRVRS"
-    },
-    {
-      "rank": 5,
-      "protocol": "vless",
-      "host": "78.159.240.11",
-      "port": 445,
-      "latency_ms": 785.7,
-      "speed_mbps": 6.222,
-      "score": 0.7794,
-      "name": "05 | VLESS | 786ms | 6.2Mbps | 🌐سرور 159 - Aza-05- MTSRVRS",
-      "uri": "vless://37af0181-5598-4aad-a040-d926bcb65757@78.159.240.11:445?security=reality&encryption=none&pbk=VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA&fp=firefox&type=grpc&serviceName=grpc&sni=passport.yandex.ru#05%20%7C%20VLESS%20%7C%20786ms%20%7C%206.2Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20159%20-%20Aza-05-%20MTSRVRS"
-    },
-    {
-      "rank": 6,
       "protocol": "vmess",
       "host": "62.93.166.184",
       "port": 1270,
-      "latency_ms": 678.0,
-      "speed_mbps": 5.987,
-      "score": 0.7687,
-      "name": "06 | VMESS | 678ms | 6.0Mbps | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪",
-      "uri": "vmess://eyJhZGQiOiI2Mi45My4xNjYuMTg0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiIiwiaWQiOiI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjEyNzAiLCJwcyI6IjA2IHwgVk1FU1MgfCA2NzhtcyB8IDYuME1icHMgfCDwn4e48J+HqiBKb2luK1RlbGVncmFtOkBGYXJhaF9WUE4g8J+HuPCfh6oiLCJzY3kiOiJhdXRvIiwic25pIjoieG1maGxweS5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0="
+      "latency_ms": 550.3,
+      "speed_mbps": 7.086,
+      "score": 0.817,
+      "name": "03 | VMESS | 550ms | 7.1Mbps | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪",
+      "uri": "vmess://eyJhZGQiOiI2Mi45My4xNjYuMTg0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiIiwiaWQiOiI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjEyNzAiLCJwcyI6IjAzIHwgVk1FU1MgfCA1NTBtcyB8IDcuMU1icHMgfCDwn4e48J+HqiBKb2luK1RlbGVncmFtOkBGYXJhaF9WUE4g8J+HuPCfh6oiLCJzY3kiOiJhdXRvIiwic25pIjoieG1maGxweS5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0="
     },
     {
-      "rank": 7,
-      "protocol": "ss",
-      "host": "57.129.113.16",
-      "port": 8388,
-      "latency_ms": 4361.0,
-      "speed_mbps": 6.556,
-      "score": 0.7384,
-      "name": "07 | SS | 4361ms | 6.6Mbps | 🌐سرور 175 - Aza-05- MTSRVRS",
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOY0FYYzBVWkk2eVFKRTFwOFFtT3Y4@57.129.113.16:8388#07%20%7C%20SS%20%7C%204361ms%20%7C%206.6Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20175%20-%20Aza-05-%20MTSRVRS"
-    },
-    {
-      "rank": 8,
+      "rank": 4,
       "protocol": "trojan",
       "host": "69.164.240.85",
       "port": 50875,
-      "latency_ms": 820.6,
-      "speed_mbps": 5.792,
-      "score": 0.7281,
-      "name": "08 | TROJAN | 821ms | 5.8Mbps | 🌐سرور 62 - Aza-05- MTSRVRS",
-      "uri": "trojan://nwilryafgkyvuxauc8pz@69.164.240.85:50875?security=tls&insecure=1&allowInsecure=1&type=tcp&headerType=none#08%20%7C%20TROJAN%20%7C%20821ms%20%7C%205.8Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%2062%20-%20Aza-05-%20MTSRVRS"
+      "latency_ms": 845.0,
+      "speed_mbps": 6.04,
+      "score": 0.6759,
+      "name": "04 | TROJAN | 845ms | 6.0Mbps | 🌐سرور 62 - Aza-05- MTSRVRS",
+      "uri": "trojan://nwilryafgkyvuxauc8pz@69.164.240.85:50875?security=tls&insecure=1&allowInsecure=1&type=tcp&headerType=none#04%20%7C%20TROJAN%20%7C%20845ms%20%7C%206.0Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%2062%20-%20Aza-05-%20MTSRVRS"
+    },
+    {
+      "rank": 5,
+      "protocol": "ss",
+      "host": "51.38.127.93",
+      "port": 8080,
+      "latency_ms": 790.5,
+      "speed_mbps": 5.838,
+      "score": 0.6601,
+      "name": "05 | SS | 790ms | 5.8Mbps | 🌐 به روزرسانی شده درAza-05 - 08:09",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYnlzNzdwcG5hdDZ3Mnln@51.38.127.93:8080#05%20%7C%20SS%20%7C%20790ms%20%7C%205.8Mbps%20%7C%20%F0%9F%8C%90%20%D8%A8%D9%87%20%D8%B1%D9%88%D8%B2%D8%B1%D8%B3%D8%A7%D9%86%DB%8C%20%D8%B4%D8%AF%D9%87%20%D8%AF%D8%B1Aza-05%20-%2008%3A09"
+    },
+    {
+      "rank": 6,
+      "protocol": "ss",
+      "host": "57.129.113.16",
+      "port": 8388,
+      "latency_ms": 2623.9,
+      "speed_mbps": 5.643,
+      "score": 0.5908,
+      "name": "06 | SS | 2624ms | 5.6Mbps | 🌐سرور 175 - Aza-05- MTSRVRS",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOY0FYYzBVWkk2eVFKRTFwOFFtT3Y4@57.129.113.16:8388#06%20%7C%20SS%20%7C%202624ms%20%7C%205.6Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20175%20-%20Aza-05-%20MTSRVRS"
+    },
+    {
+      "rank": 7,
+      "protocol": "vless",
+      "host": "146.103.43.70",
+      "port": 9543,
+      "latency_ms": 1397.4,
+      "speed_mbps": 4.914,
+      "score": 0.536,
+      "name": "07 | VLESS | 1397ms | 4.9Mbps | 🌐سرور 160 - Aza-05- MTSRVRS",
+      "uri": "vless://920b3cd9-4f82-4669-bbd2-d4a28b9052c6@146.103.43.70:9543?security=reality&encryption=none&pbk=M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=storage.yandexcloud.net&sid=123abcdf#07%20%7C%20VLESS%20%7C%201397ms%20%7C%204.9Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20160%20-%20Aza-05-%20MTSRVRS"
+    },
+    {
+      "rank": 8,
+      "protocol": "ss",
+      "host": "47.245.170.82",
+      "port": 443,
+      "latency_ms": 1308.9,
+      "speed_mbps": 3.637,
+      "score": 0.4099,
+      "name": "08 | SS | 1309ms | 3.6Mbps | 🌐سرور 12 - Aza-05- MTSRVRS",
+      "uri": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0@47.245.170.82:443#08%20%7C%20SS%20%7C%201309ms%20%7C%203.6Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%2012%20-%20Aza-05-%20MTSRVRS"
     },
     {
       "rank": 9,
       "protocol": "vless",
-      "host": "172.64.154.113",
-      "port": 8443,
-      "latency_ms": 2583.2,
-      "speed_mbps": 5.136,
-      "score": 0.5939,
-      "name": "09 | VLESS | 2583ms | 5.1Mbps | 🌐سرور 168 - Aza-05- MTSRVRS",
-      "uri": "vless://53bbdad4-2f4e-45db-8df4-fa491a6a7227@172.64.154.113:8443?&security=tls&fp=chrome&sni=freeceshi6.frii.site&type=ws&headerType=none&host=freeceshi6.frii.site&path=%2Fproxyip%3DProxyIP.JP.CMLiussss.net#09%20%7C%20VLESS%20%7C%202583ms%20%7C%205.1Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20168%20-%20Aza-05-%20MTSRVRS"
+      "host": "78.159.240.11",
+      "port": 445,
+      "latency_ms": 5129.4,
+      "speed_mbps": 3.685,
+      "score": 0.3828,
+      "name": "09 | VLESS | 5129ms | 3.7Mbps | 🌐سرور 159 - Aza-05- MTSRVRS",
+      "uri": "vless://37af0181-5598-4aad-a040-d926bcb65757@78.159.240.11:445?security=reality&encryption=none&pbk=VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA&fp=firefox&type=grpc&serviceName=grpc&sni=passport.yandex.ru#09%20%7C%20VLESS%20%7C%205129ms%20%7C%203.7Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20159%20-%20Aza-05-%20MTSRVRS"
     },
     {
       "rank": 10,
-      "protocol": "vmess",
-      "host": "8.213.211.160",
-      "port": 18565,
-      "latency_ms": 989.1,
-      "speed_mbps": 4.588,
-      "score": 0.5801,
-      "name": "10 | VMESS | 989ms | 4.6Mbps | 🇹🇭 Join+Telegram:@Farah_VPN 🇹🇭",
-      "uri": "vmess://eyJ2IjoiMiIsInBzIjoiMTAgfCBWTUVTUyB8IDk4OW1zIHwgNC42TWJwcyB8IPCfh7nwn4etIEpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTiDwn4e58J+HrSIsImFkZCI6IjguMjEzLjIxMS4xNjAiLCJwb3J0IjoiMTg1NjUiLCJ0eXBlIjoibm9uZSIsImlkIjoiODUzYTI1MWYtZGU4NS00MGNjLTg0YTYtYWI4NzQ4YzcyNThjIiwiYWlkIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9"
+      "protocol": "vless",
+      "host": "152.228.162.19",
+      "port": 80,
+      "latency_ms": 3614.4,
+      "speed_mbps": 2.487,
+      "score": 0.2665,
+      "name": "10 | VLESS | 3614ms | 2.5Mbps | 🌐سرور 142 - Aza-05- MTSRVRS",
+      "uri": "vless://5ce84688-f535-46ad-a512-37b17becf6ea@152.228.162.19:80?path=%2Fvless%2F&security=none&encryption=none&host=akamaized.net&type=ws#10%20%7C%20VLESS%20%7C%203614ms%20%7C%202.5Mbps%20%7C%20%F0%9F%8C%90%D8%B3%D8%B1%D9%88%D8%B1%20142%20-%20Aza-05-%20MTSRVRS"
     }
   ]
 }
