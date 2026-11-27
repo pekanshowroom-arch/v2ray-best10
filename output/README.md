@@ -1,23 +1,23 @@
 # Best V2Ray configs
 
-Last update: **2026-11-27 08:32:29 UTC**
+Last update: **2026-11-27 14:32:19 UTC**
 
 Source: <https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt>
 
-Scanned **105** configs, **53** responded, showing the best **10**.
+Scanned **99** configs, **40** responded, showing the best **10**.
 
 | # | Protocol | Latency | Speed | Server | Name |
 |---:|---|---:|---:|---|---|
-| 1 | VMESS | 567 ms | 7.89 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
-| 2 | VLESS | 1164 ms | 7.99 Mbps | `188.114.98.0:443` | 🌐سرور 149 - Aza-06- MTSRVRS |
-| 3 | SS | 366 ms | 6.95 Mbps | `51.38.127.93:8080` | 🌐سرور 96 - Aza-06- MTSRVRS |
-| 4 | VLESS | 687 ms | 7.47 Mbps | `71b840t.de7.h1clayd.click:443` | 🌐سرور 280 - Aza-06- MTSRVRS |
-| 5 | SS | 6539 ms | 7.74 Mbps | `8.211.38.49:443` | 🌐سرور 163 - Aza-06- MTSRVRS |
-| 6 | VLESS | 2080 ms | 7.36 Mbps | `188.114.98.0:443` | 🌐سرور 253 - Aza-06- MTSRVRS |
-| 7 | VLESS | 5682 ms | 6.79 Mbps | `195.206.235.72:443` | 🌐سرور 36 - Aza-06- MTSRVRS |
-| 8 | TROJAN | 883 ms | 6.15 Mbps | `69.164.240.85:50875` | 🌐سرور 152 - Aza-06- MTSRVRS |
-| 9 | VLESS | 1106 ms | 5.98 Mbps | `150.251.113.34:443` | 🌐سرور 179 - Aza-06- MTSRVRS |
-| 10 | VLESS | 523 ms | 3.83 Mbps | `189.30.65.203:2083` | 🌐سرور 11 - Aza-06- MTSRVRS |
+| 1 | VMESS | 554 ms | 7.61 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
+| 2 | SS | 1095 ms | 8.17 Mbps | `8.211.38.49:443` | 🌐سرور 163 - Aza-06- MTSRVRS |
+| 3 | VLESS | 972 ms | 6.93 Mbps | `188.114.98.0:443` | 🌐سرور 4 - Aza-06- MTSRVRS |
+| 4 | VLESS | 932 ms | 6.65 Mbps | `ws.dhafhdtjdti.site:2053` | 🌐سرور 220 - Aza-06- MTSRVRS |
+| 5 | TROJAN | 5355 ms | 6.07 Mbps | `69.164.240.85:50875` | 🌐سرور 152 - Aza-06- MTSRVRS |
+| 6 | VLESS | 3309 ms | 5.00 Mbps | `188.114.98.0:443` | 🌐سرور 282 - Aza-06- MTSRVRS |
+| 7 | SS | 3904 ms | 3.93 Mbps | `94.156.250.148:7001` | 🌐سرور 24 - Aza-06- MTSRVRS |
+| 8 | SS | 3240 ms | 1.01 Mbps | `185.213.23.63:990` | 🌐سرور 51 - Aza-06- MTSRVRS |
+| 9 | SS | 3456 ms | 0.40 Mbps | `51.38.127.93:8080` | 🌐سرور 96 - Aza-06- MTSRVRS |
+| 10 | VMESS | 2754 ms | 0.07 Mbps | `156.245.232.239:35043` | 🇭🇰 Join+Telegram:@Farah_VPN 🇭🇰 |
 
 ## Subscription URLs
 
