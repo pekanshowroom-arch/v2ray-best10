@@ -1,23 +1,23 @@
 # Best V2Ray configs
 
-Last update: **2026-11-26 20:32:20 UTC**
+Last update: **2026-11-27 02:32:23 UTC**
 
 Source: <https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt>
 
-Scanned **107** configs, **35** responded, showing the best **10**.
+Scanned **120** configs, **53** responded, showing the best **10**.
 
 | # | Protocol | Latency | Speed | Server | Name |
 |---:|---|---:|---:|---|---|
-| 1 | SS | 476 ms | 7.58 Mbps | `51.38.127.93:8080` | 🌐سرور 96 - Aza-05- MTSRVRS |
-| 2 | VMESS | 534 ms | 7.62 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
-| 3 | SS | 592 ms | 6.96 Mbps | `91.206.92.158:18443` | 🌐سرور 243 - Aza-05- MTSRVRS |
-| 4 | VLESS | 908 ms | 7.31 Mbps | `48.102.138.175:8443` | 🌐سرور 25 - Aza-05- MTSRVRS |
-| 5 | VLESS | 2443 ms | 7.74 Mbps | `durov.sky-vault.top:8443` | 🌐سرور 207 - Aza-05- MTSRVRS |
-| 6 | VMESS | 2073 ms | 3.74 Mbps | `3h-kazakhstan1.09vpn.com:80` | @filembad |
-| 7 | VLESS | 2572 ms | 3.80 Mbps | `h-pl.ok-habits.xyz:443` | 🌐سرور 199 - Aza-05- MTSRVRS |
-| 8 | VLESS | 1254 ms | 2.80 Mbps | `188.114.98.0:443` | 🌐سرور 67 - Aza-05- MTSRVRS |
-| 9 | VLESS | 1894 ms | 2.67 Mbps | `188.114.98.0:443` | 🌐سرور 4 - Aza-05- MTSRVRS |
-| 10 | TROJAN | 922 ms | 0.89 Mbps | `216.152.147.79:443` | 🌐سرور 125 - Aza-05- MTSRVRS |
+| 1 | VLESS | 759 ms | 15.65 Mbps | `188.114.98.0:443` | 🌐سرور 261 - Aza-06- MTSRVRS |
+| 2 | VLESS | 975 ms | 12.90 Mbps | `188.114.98.0:443` | 🌐سرور 184 - Aza-06- MTSRVRS |
+| 3 | SS | 430 ms | 8.05 Mbps | `185.213.23.63:990` | 🌐سرور 157 - Aza-06- MTSRVRS |
+| 4 | VLESS | 757 ms | 8.41 Mbps | `nig.electrowizard.ir:5563` | 🌐سرور 301 - Aza-06- MTSRVRS |
+| 5 | SS | 487 ms | 7.45 Mbps | `3.70.132.223:443` | 🌐سرور 279 - Aza-06- MTSRVRS |
+| 6 | SS | 382 ms | 6.60 Mbps | `57.129.113.16:8388` | 🌐سرور 232 - Aza-06- MTSRVRS |
+| 7 | SS | 530 ms | 7.25 Mbps | `94.156.250.148:7001` | 🌐سرور 38 - Aza-06- MTSRVRS |
+| 8 | VMESS | 548 ms | 6.99 Mbps | `62.93.166.184:1270` | 🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪 |
+| 9 | VLESS | 696 ms | 7.35 Mbps | `188.114.99.137:80` | 🌐سرور 245 - Aza-06- MTSRVRS |
+| 10 | VLESS | 682 ms | 7.18 Mbps | `p2real33.greewebservices.ir:1330` | 🌐سرور 267 - Aza-06- MTSRVRS |
 
 ## Subscription URLs
 
